@@ -11,11 +11,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "From: $email";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "Message sent successfully!";
+        header('Location: https://jadenpeacock.com'); // Redirect to homepage
+        exit(); // Stop further execution
     } else {
         echo "Failed to send message.";
     }
 
     // Alternatively, you can save the data to a database or a file
 }
-
+?>
