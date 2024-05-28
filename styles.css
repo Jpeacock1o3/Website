@@ -124,3 +124,18 @@ footer {
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: black;}
+  
+  @media (min-width: 600px) {
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Media query for desktops and larger devices */
+@media (min-width: 992px) {
+    .container {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
