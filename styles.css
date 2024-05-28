@@ -33,26 +33,94 @@ nav a {
 
 .hero-content {
     text-align: center;
-    color: black;
+    color: bwhite;
 }
+
 
 section {
     padding: 2rem;
 }
 
-.projects {
+#portfolio {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    inline-size: 1000px;
+    
+}
+.skills {
+    gap: 1rem;
+}
+.languages {
+    gap: 1rem;
+}
+.tools {
+    gap: 2rem;
+}
+.tool, .language, .class {
+    display: flex;
+    float: left;
+    
 }
 
 .project {
     background-color: #f4f4f4;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 10px;
+    inline-size: 1000px;
+    
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    p
+    padding: 1rem 0;
+}
+
+.dropbtn {
+    
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: black;}

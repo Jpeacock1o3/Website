@@ -7,16 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script>
+        function sendEmail() 
+        {
+            window.location = "mailto:jadenrpeacock@gmail.com";
+        }
+        </script>
     <header>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn">Contact me</button>
+                    <div class="dropdown-content">
+                      <a href="https://www.linkedin.com/in/jaden-peacock-a1bb75201/">LinkedIn</a>
+                      <a href="https://github.com/Jpeacock1o3">Github</a>
+                      <a href='mailto:jadenrpeacock@gmail.com'>Email</a>
+                    </div>
+                  </div></li>
             </ul>
         </nav>
     </header>
+    
 
     <section id="home" class="hero">
         <div class="hero-content">
@@ -24,24 +38,95 @@
             <p>Senior Computer Engineering Student</p>
         </div>
     </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="language">
+            <h3>Languages:</h3>
+            <ul>
+                <li class="java">Java</li>
+                <li>Python</li>
+                <li>C/C++</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Verilog</li>
+                <li>Arduino</li>
+            </ul>
+
+        </div>
+        <div class="tool">
+            <h3>Tools:</h3>
+            <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>IntelliJ</li>
+                <li>Django</li>
+                <li>tensorflow</li>
+                <li>pytorch</li>
+                <li>R studio libraries</li>
+                <li>Matlab</li>
+                <li>Linux</li>
+                
+            </ul>
+            </div>
+            
+        <div class="class">
+            <h3>Notable Classes:</h3>
+            <ul>
+                <li>Systems Programming</li>
+                <li>Operating Systems</li>
+                <li>Numerical Analysis</li>
+                <li>Computer Networks</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Machine Learning</li>
+                <li>Computer Vision</li>
+                <li>Software design methods</li>
+                <li>Circuits and Devices</li>
+            </ul>
+        </div>
+
+    </section>
 
     <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="projects">
             <div class="project">
-                <h3>Project Title 1</h3>
-                <p>Short description of the project.</p>
+                <h3>Java class final project</h3>
+                <p>Creates a database of dogs that allow for the user to edit any part of the database. There were mutiple functions added including functions to add/remove dogs,
+                    view all dogs, change information, and copy information from a file into the database. The method used to organize the data was a hash table. </p>
+                    <a href="https://github.com/Jpeacock1o3/212Project1">Github Repsitory</a>
             </div>
             <div class="project">
-                <h3>Project Title 2</h3>
-                <p>Short description of the project.</p>
+                <h3>Compilation of CMPSC 311 Projects</h3>
+                <p>These projects included assignments that had to do with accessing your computer systems to do different types of task. There were simple ones that listed all the files in directories listed in assignment 1, to assignments including multithreading and doing server to client communication using the UDP protocol. 
+                    All of these projects were done in C and were compiled using the gcc compiler.
+                </p>
+                <a href="https://github.com/Jpeacock1o3/Systems-programming">Github Repsitory</a>
             </div>
+            <div class="project">
+                <h3>Circuit project</h3>
+                <p>This was more of a physical project than a coding project. It involved me going through mutiple planning steps to build a karaoke machine that used a aux cord to play music and dials that controlled the volume, tone, and acted as a mixer.
+                    The board also included led's that displayed the volume that was also controlled on the pcb board. The steps included a hand drawn schematic to calculate the values of the resistors, potentiometers, and capactors.
+                     Then involved a simulation using multisim to test, then a breadboard test build, to finally soldering it into a pcb board as the final product.
+                </p>
         </div>
+        <div class="project">
+            <h3>This website</h3>
+            <p>This website was created by using diffrent languages like HTML, CSS, JavaScript, and PHP. The HTML and CSS was used to create the look of the website. The JavaScript was used to allow the mail button in the nav bar to lead directly to your preffered mail program.
+                The PHP was used to allow the contact form at the bottom of the page to send an email directly to my email for easier access instead of the email tab in the nav bar.
+            </p>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a senior Computer Engineering Student at Penn State. I </p>
+        <p>Hello! I'm Jaden Peacock, a senior Computer Engineering student at Pennsylvania State University, currently residing in New York City for the summer. I am set to graduate in May 2025 and am deeply passionate about the intersection of technology and innovation.
+             </p>
+        <p>My work experience includes serving as a Project Intern at Tech
+                , where I honed my skills in project management and technological development, and as a Food Pantry Volunteer at the International Pentecostal Church, where I developed strong community engagement skills.</p>
+        <p>I am an active member of the Engineering Club and the Google Student Development Club at Penn State. These involvements have provided me with opportunities to collaborate with peers on innovative projects and stay updated with the latest technological advancements.
+                </p>
         
     </section>
 
@@ -54,8 +139,12 @@
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
+        <p>Or you can click on of the links under Contact me</p>
     </section>
     
 
     <footer>
-        <
+        <p>&copy; 2024 Jaden Peacock</p>
+    </footer>
+</body>
+</html>
